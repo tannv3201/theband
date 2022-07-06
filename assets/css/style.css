@@ -33,6 +33,10 @@ html{
 #header {
     height: 46px;
     background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 }
 
 #header .search-btn {
@@ -114,14 +118,17 @@ html{
 
 /* Begin: Slider */
 #slider {
- 
+    margin-top: 46px;
+    height: 400px;
+    background-color: aquamarine;
 }
 /* End: Slider */
 
 
 /* Begin: Content */
 #content {
-
+    height: 1000px;
+    background-color: rgb(53, 103, 147);
 }
 /* End: Content */
 
