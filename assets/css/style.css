@@ -31,6 +31,7 @@ html{
 
 /* Begin: Header */
 #header {
+    z-index: 1;
     height: 46px;
     background-color: #000;
     position: fixed;
@@ -118,10 +119,31 @@ html{
 
 /* Begin: Slider */
 #slider {
+    position: relative;
     margin-top: 46px;
-    height: 400px;
-    background-color: aquamarine;
+    padding-top: 50%;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
 }
+
+#slider .text-content {
+    color: #fff;
+    position: absolute;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .text-heading {
+    margin: 25px 0;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+}
+
 /* End: Slider */
 
 
