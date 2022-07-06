@@ -22,18 +22,41 @@ html{
 4. Kiểu dáng (Kiểu chữ, hình dạng, ...)
 
 */
-/* Start - CSS: Main */
+/* Begin: Main */
 #main {
 
 }
-/* End - CSS: Main */
+/* End: Main */
 
 
-/* Start - CSS: Header */
+/* Begin: Header */
 #header {
     height: 46px;
     background-color: #000;
+}
 
+#header .search-btn {
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+
+#nav {
+    display: inline-block;
 }
 
 #nav, .subnav {
@@ -86,25 +109,25 @@ html{
     line-height: 38px;
 }
 
-/* End - CSS: Heasder */
+/* End: Heasder */
 
 
-/* Start - CSS: Slider */
+/* Begin: Slider */
 #slider {
  
 }
-/* End - CSS: Slider */
+/* End: Slider */
 
 
-/* Start - CSS: Content */
+/* Begin: Content */
 #content {
 
 }
-/* End - CSS: Content */
+/* End: Content */
 
 
-/* Start - CSS: Footer */
+/* Begin: Footer */
 #footer {
 
 }
-/* End - CSS: Footer */
+/* End: Footer */
