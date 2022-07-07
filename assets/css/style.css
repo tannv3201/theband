@@ -149,8 +149,37 @@ html{
 
 /* Begin: Content */
 #content {
-    height: 1000px;
-    background-color: rgb(53, 103, 147);
+    
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(131, 124, 124);
+    margin: 15px 0;
+    text-align: center;
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 1.4;
 }
 /* End: Content */
 
