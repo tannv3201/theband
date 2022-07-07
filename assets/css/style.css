@@ -23,6 +23,12 @@ html{
 
 */
 /* Begin: Main */
+
+/* Khắc phục thuộc tính Float */
+.clear {
+    clear: both;
+}
+
 #main {
 
 }
@@ -180,6 +186,26 @@ html{
     margin: 15px 0;
     text-align: justify;
     line-height: 1.4;
+}
+
+#content .members-list {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float: left;
+    width:calc(100% / 3);
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#content .member-img {
+    width: 154px;
+    border-radius: 4px;
 }
 /* End: Content */
 
