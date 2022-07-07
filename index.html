@@ -113,9 +113,9 @@
                                 <p class="place-description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo
                                 </p>
-                                <a href="#" class="place-buy-btn">
+                                <button class="place-buy-btn js-buy-ticket">
                                     Buy Tickets
-                                </a>
+                                </button>
                             </div>
                         </div>
 
@@ -131,9 +131,9 @@
                                 <p class="place-description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo
                                 </p>
-                                <a href="#" class="place-buy-btn">
+                                <button class="place-buy-btn js-buy-ticket">
                                     Buy Tickets
-                                </a>
+                                </button>
                             </div>
                         </div>
 
@@ -149,9 +149,9 @@
                                 <p class="place-description">
                                     Praesent tincidunt sed tellus ut rutrum sed vitae justo
                                 </p>
-                                <a href="#" class="place-buy-btn">
+                                <button class="place-buy-btn js-buy-ticket">
                                     Buy Tickets
-                                </a>
+                                </button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -175,9 +175,9 @@
         </div>
     </div>
 
-    <div class="modal">
+    <div class="modal js-modal">
         <div class="modal-container">
-            <div class="modal-close">
+            <div class="modal-close js-modal-close">
                 <i class="ti-close"></i>
             </div>
             <header class="modal-header">
@@ -211,5 +211,30 @@
             </footer>
         </div>
     </div>
+
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+
+        // Hiển thị modal (them class open của modal)
+        function showBuyTicket() {
+            modal.classList.add('open')
+        }
+
+        // Ẩn modal (xóa class open của modal)
+        function hideBuyTicket() {
+            modal.classList.remove('open')
+        }
+
+        // Lặp qua từng button & nghe sự kiện
+        for(const buyBtn  of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTicket)
+        }
+
+        // L nghe sự kiện
+        modalClose.addEventListener('click', hideBuyTicket)
+    </script>
+
 </body>
 </html>
