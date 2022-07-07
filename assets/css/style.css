@@ -315,3 +315,89 @@ html{
 
 }
 /* End: Footer */
+
+.modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0; 
+    right: 0;  
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal .modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 64px);
+    min-height: 200px;
+    position: relative;
+}
+
+.modal-body {
+    padding: 16px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin: 15px 0 8px 0;
+}
+
+.modal-input {
+    padding: 8px;
+    width: 100%;
+}
+
+#buy-tickets {
+    background-color: #009688;
+    color: #fff;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    padding: 16px;
+    margin: 16px 0;
+    border: none;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#buy-tickets:hover {
+    opacity: 1;
+}
+
+.modal-header {
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #fff;
+    background-color: #009688;
+    padding: 42px 16px;
+    text-align: center;
+}
+
+.modal-footer .modal-help {
+    padding: 10px;
+    text-align: right;
+}
+
+.modal-footer .modal-help a {
+    color: cornflowerblue;
+}
