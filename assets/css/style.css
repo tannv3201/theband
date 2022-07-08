@@ -22,8 +22,9 @@ html{
 4. Kiểu dáng (Kiểu chữ, hình dạng, ...)
 
 */
-/* Begin: Main */
 
+
+/* Common */
 /* Khắc phục thuộc tính Float */
 .clear {
     clear: both;
@@ -33,6 +34,29 @@ html{
     color: #fff !important;
 }
 
+.text-center {
+    text-align: center !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-3 {
+    width: 33.33333%;
+}
+
+.col-2 {
+    width: 50%;
+}
+/* Begin: Main */
 #main {
 
 }
@@ -196,12 +220,6 @@ html{
     margin-top: 48px;
 }
 
-#content .member-item {
-    float: left;
-    width:calc(100% / 3);
-    text-align: center;
-}
-
 #content .member-name {
     font-size: 15px;
     margin: 15px 0;
@@ -253,14 +271,7 @@ html{
 
 .places-list {
     margin-top: 32px;
-    margin-left: -8px;
-    margin-right: -8px;
-}
-
-.place-item{
-    float: left;
-    width: calc(100%/3);
-    padding: 0 8px;
+    margin-bottom: 48px;
 }
 
 .place-img{
@@ -402,6 +413,6 @@ html{
     color: cornflowerblue;
 }
 
-.open {
+.modal.open {
     display: flex;
 }
