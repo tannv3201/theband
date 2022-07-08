@@ -26,6 +26,10 @@ html{
 
 /* Common */
 /* Khắc phục thuộc tính Float */
+.pull-right {
+    float: right !important;
+}
+
 .text-white {
     color: #fff !important;
 }
@@ -70,6 +74,23 @@ html{
 
 .margin-top-16 {
     margin-top: 16px !important;
+}
+
+
+.btn{
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #757575;
+    color: #000;
 }
 /* Begin: Main */
 #main {
@@ -205,7 +226,7 @@ html{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 16px;
+    padding: 64px 0 112px;
 }
 
 #content .section-heading {
@@ -286,7 +307,6 @@ html{
 
 .places-list {
     margin-top: 32px;
-    margin-bottom: 48px;
 }
 
 .place-img{
@@ -318,19 +338,6 @@ html{
     margin: 15px 0;
 }
 
-.place-buy-btn{
-    background-color: #000;
-    color: #fff;
-    font-size: 15px;
-    text-decoration: none;
-    padding: 10px 16px;
-    display: inline-block;
-}
-
-.place-buy-btn:hover {
-    background-color: #757575;
-    color: #000;
-}
 
 /* Contact Form */
 .contact-content {
@@ -357,27 +364,48 @@ html{
     width: 100%;
 }
 
-.contact-form .form-submit {
-    font-size: 15px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    padding: 10px 16px;
-    float: right;
-    cursor: pointer;
-}
-
 .contact-form .form-submit:hover {
     background-color: #ccc;
     color: #000;
 }
+
 /* End: Content */
 
+/* Map-Section */
+.map-section img{
+    width: 100%;
+}
 
 /* Begin: Footer */
 #footer {
-
+    padding: 64px 16px;
+    text-align: center;
 }
+
+#footer .social-list {
+    font-size: 24px;
+    
+}
+
+#footer .social-list a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a:hover,
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
 /* End: Footer */
 
 .modal {
