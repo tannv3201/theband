@@ -26,10 +26,6 @@ html{
 
 /* Common */
 /* Khắc phục thuộc tính Float */
-.clear {
-    clear: both;
-}
-
 .text-white {
     color: #fff !important;
 }
@@ -43,10 +39,21 @@ html{
     margin-right: -8px;
 }
 
+/* Khac phuc Float */
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .col {
     float: left;
     padding-left: 8px;
     padding-right: 8px;
+}
+
+.col-full {
+    width: 100%;
 }
 
 .col-3 {
@@ -55,6 +62,14 @@ html{
 
 .col-2 {
     width: 50%;
+}
+
+.margin-top-8 {
+    margin-top: 8px !important;
+}
+
+.margin-top-16 {
+    margin-top: 16px !important;
 }
 /* Begin: Main */
 #main {
@@ -317,7 +332,45 @@ html{
     color: #000;
 }
 
+/* Contact Form */
+.contact-content {
+    margin-top: 48px;
+}
 
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit {
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    float: right;
+    cursor: pointer;
+}
+
+.contact-form .form-submit:hover {
+    background-color: #ccc;
+    color: #000;
+}
 /* End: Content */
 
 
