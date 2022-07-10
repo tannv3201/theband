@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css//responsive.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
+
 <body>
     <div id="main">
         <div id="header">
@@ -21,7 +23,7 @@
                 <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#">
-                        More 
+                        More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
@@ -60,7 +62,14 @@
                     We love music
                 </p>
                 <p class="about-text">
-                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
                 </p>
 
                 <div class=" row members-list">
@@ -164,8 +173,8 @@
             </div>
             <!--End Tour Section -->
 
-             <!-- Contact Section -->
-             <div id="contact" class="content-section">
+            <!-- Contact Section -->
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">
                     CONTACT
                 </h2>
@@ -196,7 +205,8 @@
                             </div>
                             <div class="row margin-top-8">
                                 <div class="col col-full">
-                                    <input type="text" name="" required placeholder="Message" id="" class="form-control">
+                                    <input type="text" name="" required placeholder="Message" id=""
+                                        class="form-control">
                                 </div>
                             </div>
                             <input class="btn pull-right margin-top-16 s-full-width" type="submit" value="SEND">
@@ -257,7 +267,7 @@
 
             <footer class="modal-footer">
                 <p class="modal-help">
-                    Need   <a href="">help?</a>
+                    Need <a href="">help?</a>
                 </p>
             </footer>
         </div>
@@ -279,7 +289,7 @@
         }
 
         // Lặp qua từng button & nghe sự kiện
-        for(const buyBtn  of buyBtns) {
+        for (const buyBtn of buyBtns) {
             buyBtn.addEventListener('click', showBuyTicket)
         }
 
@@ -288,11 +298,11 @@
 
 
         // Responsive Mobile (Đóng mở Menu trên màn hình Mobile)
-        var header = document.getElementById('header'); 
+        var header = document.getElementById('header');
         var mobileMenu = document.getElementById('mobile-menu');
         var headerHeight = header.clientHeight;
 
-        mobileMenu.onclick = function() {
+        mobileMenu.onclick = function () {
             var isClosed = header.clientHeight === headerHeight;
             if (isClosed) {
                 header.style.height = 'auto';
@@ -303,21 +313,23 @@
         }
 
         // Tự động đóng khi chọn một phần tử trong menu
-        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-        for (var i = 0; i < menuItems.length; i ++) {
-            var menuItem =  menuItems[i];
-            
-            menuItem.onclick = function(event) {
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.onclick = function (event) {
                 var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
-                if (isParentMenu){
+                if (isParentMenu) {
                     event.preventDefault();
-                }else {
+                }else{
+                    header.style.height = null;
                 }
             }
         }
 
 
+
     </script>
 
 </body>
+
 </html>
